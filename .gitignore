@@ -51,5 +51,3 @@ next-env.d.ts
 *.sln
 *.sw?
 *.env
-.HomeworkContext.md
-AGENTS.md
