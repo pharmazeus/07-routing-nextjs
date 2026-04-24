@@ -50,9 +50,4 @@ next-env.d.ts
 *.njsproj
 *.sln
 *.sw?
-*.HomeworkContext.md
-*AGENTS.md
-*CLAUDE.md
-*env
-*.gitignore
-*.claude
+*.env
