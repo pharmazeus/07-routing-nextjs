@@ -1,5 +1,5 @@
 import { fetchNotes } from "@/lib/api";
-import Notes from "../../../Notes.client";
+import Notes from "@/app/notes/Notes.client";
 import {
     dehydrate,
     HydrationBoundary,
@@ -9,10 +9,10 @@ import {
 export default async function FilteredNotesPage({
     params,
 }: {
-    params: Promise<{ tag: string[] }>;
+    params: Promise<{ slug: string[] }>;
 }) {
-    const { tag: tagSegments } = await params;
-    const tag = tagSegments[0] || "all";
+    const { slug } = await params;
+    const tag = slug[0] || "all";
 
     const queryClient = new QueryClient();
 
