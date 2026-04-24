@@ -1,5 +1,5 @@
 import { fetchNoteById } from "@/lib/api";
-import NotePreview from "@/components/NotePreview/NotePreview";
+import NotePreview from "./NotePreview.client";
 import Modal from "@/components/Modal/Modal";
 
 export default async function InterceptedNoteModal({
